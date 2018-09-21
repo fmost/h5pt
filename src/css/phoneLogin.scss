@@ -1,0 +1,276 @@
+@function px($size) {
+  @return $size / 1334 * 1rem;
+}
+
+input,button{
+  outline:none;
+}
+input:-webkit-autofill {
+    -webkit-box-shadow: 0 0 0px 1000px white inset !important;
+}
+
+body{
+  background: #1598da url('../images/phoneLogin/bg.jpg') no-repeat;
+  font-family: 'Microsoft YaHei';
+  background-size: 100% auto;
+}
+
+
+
+.head{
+  $h:px(55);
+  height:$h;
+  line-height: $h;
+  background:url('../images/phoneLogin/hdbg.png') center/contain repeat-x;
+  color:#fff;
+  text-align: center;
+  position: relative;
+  .title{
+    font-size: px(30);
+    font-weight:normal;
+  }
+  .goback{
+    position: absolute;
+    left:px(26);
+    top:px(9);
+    color:#0386be;
+    font-size: px(16);
+    width:px(66);
+    height:px(37);
+    line-height: px(37);
+    background:url('../images/phoneLogin/goback.png') center/contain no-repeat;
+  }
+
+}
+
+
+.container{
+  color:#2ac7ff;
+  $w:px(1051);
+  $h:px(616);
+  width:$w;
+  height:$h;
+  background:url('../images/phoneLogin/content.png') center/contain no-repeat;
+  margin:px(30) auto 0;
+  position: relative;  
+}
+.form-horizontal{
+  padding-top: px(130);
+}
+.form-title{
+  font-size:0;
+  text-align: center;
+  padding-top: px(12);
+  .tit1,.tit2{
+    width:px(207);
+    height:px(46);
+    background:url('../images/phoneLogin/title1.png') center/contain no-repeat;
+    margin:0 auto;
+  }
+  .tit2{
+    background:url('../images/phoneLogin/title2.png') center/contain no-repeat;
+  }
+}
+.form-group{
+  $left:px(320);
+  position: relative;
+  padding-left: $left;
+  $h:px(60);
+  padding-bottom:px(30);
+  &-btns{
+    position: static;
+    padding-left: 0;
+    text-align: center;
+    padding-bottom: 0;
+  }
+  .control-label{
+    height:$h;
+    line-height: $h;
+    color:#89e3fe;
+    font-size:px(36);
+    width:$left - px(30);
+    position: absolute;
+    left:0;
+    top:0;
+    text-align: right;
+  }
+  @at-root .form-control{
+    width:px(500);
+    height:$h;
+    line-height: $h;
+    background:#164695;
+    border-radius:px(7);
+    border:none;
+    padding:0 px(22);
+    color:#fff;
+    font-size:px(32);
+    box-sizing:border-box;
+    -moz-box-sizing:border-box; /* Firefox */
+    -webkit-box-sizing:border-box; /* Safari */
+    &::-webkit-input-placeholder{
+      color:#277ce7;
+    }
+  }
+  
+  #verify_code{
+    width:px(272);
+  }
+}
+
+.btn-getcode{
+  width:px(213);
+  height:px(61);
+  line-height: px(61);
+  background:url('../images/phoneLogin/btn-getcode.png') center/contain no-repeat;
+  border:none;
+  font-size: px(30);
+  color:#005f09;
+  position: absolute;
+  top:px(276);
+  right:px(230);
+  z-index: 5;
+  &:hover{
+    transform:scale(0.9);
+    background-image: url('../images/phoneLogin/btn-getcode.png');
+  }
+  &.countdown{
+    background-image: url('../images/phoneLogin/btn-getcode-cd.png');
+    color:#023920;
+    &:hover{
+      transform:scale(1);
+    }
+  }
+}
+
+.btn-submit{
+  width:px(237);
+  height:px(87);
+  background:url('../images/phoneLogin/btn-submit.png') center/contain no-repeat;
+  border:none;
+  font-size:0;
+  margin-top: px(26 + 40);
+
+}
+
+.tips{
+  text-align: center;
+  padding-top: px(10);
+  font-size: px(26);
+}
+
+.layer{
+  background:rgba(#000,.7);
+  position: fixed;
+  top:0;
+  left:0;
+  width:100%;
+  height:100%;
+  display:none;
+  z-index: 50;
+  .layer-box{
+    background:#041238;
+    border:px(6) solid #2976d6;
+    border-radius:px(30);
+    // width:px(446);
+    box-sizing:border-box;
+    position: absolute;
+    left:50%;
+    top:50%;
+    transform:translate3d(-50%,-50%,0);
+    padding:px(56) px(50);
+    font-size:px(26);
+    color:#2ac7ff;
+    text-align: center;
+    display:none;
+    &.pic-code{
+      width:px(680);
+      padding:px(56) 0 0;
+      .inblock{
+        display:inline-block;
+        vertical-align: middle;
+        margin: 0 px(6);
+        img{
+          height:px(60);
+          vertical-align: top;
+        }
+      }
+      .form-control{
+        width:px(300);
+      }
+      .box-bd{
+        padding:0 0 px(56);
+      }
+      .box-foot{
+        background:#092a5f;
+        border-radius:0 0 px(30) px(30);
+        padding:px(38) 0;
+        font-size: 0;
+        a{
+          margin:0 px(34);
+          vertical-align: top;
+          display:inline-block;
+          width:px(218);
+          height:px(88);
+          background:url('../images/phoneLogin/btn-cancel.png') center/contain no-repeat;
+          &.btn-yes{
+            background-image: url('../images/phoneLogin/btn-yes.png');
+          }
+        }
+      }
+    }
+  }
+}
+
+
+
+
+.ucomplete{
+  .form-horizontal{
+    padding-top: px(80);
+    .bgblock{
+      width:px(1022);
+      height:px(376);
+      background:#041238;
+      position: absolute;
+      left:px(16);
+      top:px(106);
+      z-index: 1;
+    }
+    .form-group{
+      z-index: 2;
+      padding-bottom: px(24);
+      $h:px(50);
+      .control-label{
+        height:$h;
+        line-height: $h;
+        font-size:px(32);
+      }
+      .form-control{
+        height:$h;
+        line-height: $h;
+        font-size: px(28);
+      }
+      &-phone{
+        // padding-bottom: px(52);
+        .tips{
+          text-align: left;
+          font-size: px(24);
+        }      
+      }
+    }
+    .btn-submit{
+      margin-top: px(26);
+      background-image:url('../images/phoneLogin/btn-ok.png');
+    }
+    .btn-getcode{
+      top:px(250);
+      font-size: px(28);
+      height:px(50);
+      line-height: px(50);
+      background-size:px(220) px(61);
+      border-radius:px(10);
+    }
+    
+  }
+
+}

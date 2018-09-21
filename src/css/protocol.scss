@@ -1,0 +1,24 @@
+@function px($size) {
+  @return $size / 720 * 1rem;
+}
+body{
+  background: #fff;
+}
+.wrapper{
+  padding:px(20);
+  word-break:break-all;
+}
+.article{
+  line-height: 1.6;
+  >.title{
+    text-align: center;
+    font-size:px(44);
+  }
+  .content{
+    font-size:px(26);
+    >p{
+      text-indent:2em;
+      padding:px(10) 0 0;
+    }
+  }
+}

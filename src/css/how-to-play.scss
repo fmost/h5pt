@@ -1,0 +1,68 @@
+@function px($size) {
+  @return $size / 720 * 1rem;
+}
+body{
+  background: #fff;
+  font-family: 'Microsoft YaHei';
+}
+.wrapper{
+  padding-top: px(20);
+}
+.how-hd{
+  text-align: center;
+  a{
+    color:#999;
+    font-size: px(30);
+    position: relative;
+    display:inline-block;
+    $height:px(48);
+    height:$height;
+    line-height: $height;
+    padding:0 px(8);
+    margin:0 px(35);
+    &.cur{
+      color:#333;
+      &:after{
+        content:'';
+        display:block;
+        width:100%;
+        height:px(6);
+        background:#ffd923;
+        border-radius:px(3);
+        position: absolute;
+        left:0;
+        bottom:px(-6);
+      }
+    }
+  }
+}
+
+.how-bd{
+  padding:px(30) px(40) 0 px(52);
+  .panel{
+    &-hd{
+      font-size:px(30);
+      font-weight:bold;
+      position: relative;
+      padding:px(30) 0 px(20);
+      &:before{
+        display:block;
+        content:'';
+        $size:px(10);
+        width:$size;
+        height:$size;
+        background:#ffd923;
+        border-radius:$size/2;
+        position:absolute;
+        left:px(-20);
+        top:px(42);
+      }
+    }
+    &-bd{
+      font-size:px(26);
+      color:#666;
+      line-height: px(48);
+    }
+
+  }
+}

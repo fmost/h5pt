@@ -1,0 +1,17 @@
+body {
+  background: #fff; }
+
+.wrapper {
+  padding: 0.02778rem;
+  word-break: break-all; }
+
+.article {
+  line-height: 1.6; }
+  .article > .title {
+    text-align: center;
+    font-size: 0.06111rem; }
+  .article .content {
+    font-size: 0.03611rem; }
+    .article .content > p {
+      text-indent: 2em;
+      padding: 0.01389rem 0 0; }

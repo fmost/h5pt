@@ -1,0 +1,218 @@
+input, button {
+  outline: none; }
+
+input:-webkit-autofill {
+  -webkit-box-shadow: 0 0 0px 1000px white inset !important; }
+
+body {
+  background: #1598da url("../images/phoneLogin/bg.jpg") no-repeat;
+  font-family: 'Microsoft YaHei';
+  background-size: 100% auto; }
+
+.head {
+  height: 0.04123rem;
+  line-height: 0.04123rem;
+  background: url("../images/phoneLogin/hdbg.png") center/contain repeat-x;
+  color: #fff;
+  text-align: center;
+  position: relative; }
+  .head .title {
+    font-size: 0.02249rem;
+    font-weight: normal; }
+  .head .goback {
+    position: absolute;
+    left: 0.01949rem;
+    top: 0.00675rem;
+    color: #0386be;
+    font-size: 0.01199rem;
+    width: 0.04948rem;
+    height: 0.02774rem;
+    line-height: 0.02774rem;
+    background: url("../images/phoneLogin/goback.png") center/contain no-repeat; }
+
+.container {
+  color: #2ac7ff;
+  width: 0.78786rem;
+  height: 0.46177rem;
+  background: url("../images/phoneLogin/content.png") center/contain no-repeat;
+  margin: 0.02249rem auto 0;
+  position: relative; }
+
+.form-horizontal {
+  padding-top: 0.09745rem; }
+
+.form-title {
+  font-size: 0;
+  text-align: center;
+  padding-top: 0.009rem; }
+  .form-title .tit1, .form-title .tit2 {
+    width: 0.15517rem;
+    height: 0.03448rem;
+    background: url("../images/phoneLogin/title1.png") center/contain no-repeat;
+    margin: 0 auto; }
+  .form-title .tit2 {
+    background: url("../images/phoneLogin/title2.png") center/contain no-repeat; }
+
+.form-group {
+  position: relative;
+  padding-left: 0.23988rem;
+  padding-bottom: 0.02249rem; }
+  .form-group-btns {
+    position: static;
+    padding-left: 0;
+    text-align: center;
+    padding-bottom: 0; }
+  .form-group .control-label {
+    height: 0.04498rem;
+    line-height: 0.04498rem;
+    color: #89e3fe;
+    font-size: 0.02699rem;
+    width: 0.21739rem;
+    position: absolute;
+    left: 0;
+    top: 0;
+    text-align: right; }
+  .form-control {
+    width: 0.37481rem;
+    height: 0.04498rem;
+    line-height: 0.04498rem;
+    background: #164695;
+    border-radius: 0.00525rem;
+    border: none;
+    padding: 0 0.01649rem;
+    color: #fff;
+    font-size: 0.02399rem;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    /* Firefox */
+    -webkit-box-sizing: border-box;
+    /* Safari */ }
+    .form-control::-webkit-input-placeholder {
+      color: #277ce7; }
+  .form-group #verify_code {
+    width: 0.2039rem; }
+
+.btn-getcode {
+  width: 0.15967rem;
+  height: 0.04573rem;
+  line-height: 0.04573rem;
+  background: url("../images/phoneLogin/btn-getcode.png") center/contain no-repeat;
+  border: none;
+  font-size: 0.02249rem;
+  color: #005f09;
+  position: absolute;
+  top: 0.2069rem;
+  right: 0.17241rem;
+  z-index: 5; }
+  .btn-getcode:hover {
+    -webkit-transform: scale(0.9);
+    transform: scale(0.9);
+    background-image: url("../images/phoneLogin/btn-getcode.png"); }
+  .btn-getcode.countdown {
+    background-image: url("../images/phoneLogin/btn-getcode-cd.png");
+    color: #023920; }
+    .btn-getcode.countdown:hover {
+      -webkit-transform: scale(1);
+      transform: scale(1); }
+
+.btn-submit {
+  width: 0.17766rem;
+  height: 0.06522rem;
+  background: url("../images/phoneLogin/btn-submit.png") center/contain no-repeat;
+  border: none;
+  font-size: 0;
+  margin-top: 0.04948rem; }
+
+.tips {
+  text-align: center;
+  padding-top: 0.0075rem;
+  font-size: 0.01949rem; }
+
+.layer {
+  background: rgba(0, 0, 0, 0.7);
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: none;
+  z-index: 50; }
+  .layer .layer-box {
+    background: #041238;
+    border: 0.0045rem solid #2976d6;
+    border-radius: 0.02249rem;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    -webkit-transform: translate3d(-50%, -50%, 0);
+    transform: translate3d(-50%, -50%, 0);
+    padding: 0.04198rem 0.03748rem;
+    font-size: 0.01949rem;
+    color: #2ac7ff;
+    text-align: center;
+    display: none; }
+    .layer .layer-box.pic-code {
+      width: 0.50975rem;
+      padding: 0.04198rem 0 0; }
+      .layer .layer-box.pic-code .inblock {
+        display: inline-block;
+        vertical-align: middle;
+        margin: 0 0.0045rem; }
+        .layer .layer-box.pic-code .inblock img {
+          height: 0.04498rem;
+          vertical-align: top; }
+      .layer .layer-box.pic-code .form-control {
+        width: 0.22489rem; }
+      .layer .layer-box.pic-code .box-bd {
+        padding: 0 0 0.04198rem; }
+      .layer .layer-box.pic-code .box-foot {
+        background: #092a5f;
+        border-radius: 0 0 0.02249rem 0.02249rem;
+        padding: 0.02849rem 0;
+        font-size: 0; }
+        .layer .layer-box.pic-code .box-foot a {
+          margin: 0 0.02549rem;
+          vertical-align: top;
+          display: inline-block;
+          width: 0.16342rem;
+          height: 0.06597rem;
+          background: url("../images/phoneLogin/btn-cancel.png") center/contain no-repeat; }
+          .layer .layer-box.pic-code .box-foot a.btn-yes {
+            background-image: url("../images/phoneLogin/btn-yes.png"); }
+
+.ucomplete .form-horizontal {
+  padding-top: 0.05997rem; }
+  .ucomplete .form-horizontal .bgblock {
+    width: 0.76612rem;
+    height: 0.28186rem;
+    background: #041238;
+    position: absolute;
+    left: 0.01199rem;
+    top: 0.07946rem;
+    z-index: 1; }
+  .ucomplete .form-horizontal .form-group {
+    z-index: 2;
+    padding-bottom: 0.01799rem; }
+    .ucomplete .form-horizontal .form-group .control-label {
+      height: 0.03748rem;
+      line-height: 0.03748rem;
+      font-size: 0.02399rem; }
+    .ucomplete .form-horizontal .form-group .form-control {
+      height: 0.03748rem;
+      line-height: 0.03748rem;
+      font-size: 0.02099rem; }
+    .ucomplete .form-horizontal .form-group-phone .tips {
+      text-align: left;
+      font-size: 0.01799rem; }
+  .ucomplete .form-horizontal .btn-submit {
+    margin-top: 0.01949rem;
+    background-image: url("../images/phoneLogin/btn-ok.png"); }
+  .ucomplete .form-horizontal .btn-getcode {
+    top: 0.18741rem;
+    font-size: 0.02099rem;
+    height: 0.03748rem;
+    line-height: 0.03748rem;
+    background-size: 0.16492rem 0.04573rem;
+    border-radius: 0.0075rem; }
